@@ -9,7 +9,7 @@ public class BetaGenerator implements MatrixGenerator {
         long[][] matrix = new long[rowsNumber][columnsNumber];
         for (int i = 0; i < rowsNumber; ++i) {
             for (int j = 0; j < columnsNumber; ++j) {
-                matrix[i][j] = ((long) rowsNumber / columnsNumber * i * j) * 2;
+                matrix[i][j] = ((long) columnsNumber / rowsNumber * i * j) * 2;
             }
         }
         return matrix;
