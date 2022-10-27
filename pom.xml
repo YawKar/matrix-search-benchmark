@@ -25,6 +25,11 @@
             <artifactId>jmh-generator-annprocess</artifactId>
             <version>1.35</version>
         </dependency>
+        <dependency>
+            <groupId>com.github.sh0nk</groupId>
+            <artifactId>matplotlib4j</artifactId>
+            <version>0.5.0</version>
+        </dependency>
     </dependencies>
 
 </project>
