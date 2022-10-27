@@ -31,8 +31,8 @@ https://github.com/YawKar/matrix-search-benchmark/blob/4dacc2592fbadad7553f94c58
 # Визуализация
 
 ## Производительность на матрицах AlphaGenerator
-![graph1](https://github.com/YawKar/matrix-search-benchmark/raw/4dacc2592fbadad7553f94c5811a11c60d688ce6/AlphaMatrices.png)
+![graph1](https://github.com/YawKar/matrix-search-benchmark/raw/master/AlphaMatrices.png)
 
 ## Производительность на матрицах BetaGenerator
-![graph1](https://github.com/YawKar/matrix-search-benchmark/raw/4dacc2592fbadad7553f94c5811a11c60d688ce6/BetaMatrices.png)
+![graph1](https://github.com/YawKar/matrix-search-benchmark/raw/master/BetaMatrices.png)
 
