@@ -47,5 +47,29 @@ public class Main {
         }
         plot2.legend().loc("upper left");
         plot2.show();
+
+        Plot plot3 = Plot.create();
+        plot3.xlabel("Number of rows (number of columns is constant 8192)");
+        plot3.ylabel("ln(ns/op)");
+        plot3.title("Semi-Log performance comparison on AlphaMatrices");
+        for (var labelResult : labeledResults.entrySet()) {
+            if (labelResult.getKey().startsWith("alpha")) {
+                plot3.plot().label(labelResult.getKey()).add(sequenceOfNumbersOfRows, labelResult.getValue().stream().mapToDouble(Math::log).boxed().toList());
+            }
+        }
+        plot3.legend().loc("upper left");
+        plot3.show();
+
+        Plot plot4 = Plot.create();
+        plot4.xlabel("Number of rows (number of columns is constant 8192)");
+        plot4.ylabel("ln(ns/op)");
+        plot4.title("Semi-Log performance comparison on BetaMatrices");
+        for (var labelResult : labeledResults.entrySet()) {
+            if (labelResult.getKey().startsWith("beta")) {
+                plot4.plot().label(labelResult.getKey()).add(sequenceOfNumbersOfRows, labelResult.getValue().stream().mapToDouble(Math::log).boxed().toList());
+            }
+        }
+        plot4.legend().loc("upper left");
+        plot4.show();
     }
 }
